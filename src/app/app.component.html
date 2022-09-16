@@ -1,0 +1,20 @@
+<div class="container mt-6 ml-3">
+  <h1>{{ title | uppercase}}</h1>
+  <h3 class="mt-3">List of Blogs</h3>
+
+<div class="row mt-1" *ngFor="let item of blogs">
+  <div class="card" style=" width: 500px">
+    <div class="card-body">
+      <h5 class="card-title">{{item.title}}</h5>
+      <h6 class="card-subtitle mb-2 text-muted">Blog Id {{item.id}}</h6>
+      <p class="card-text">{{item.description}}</p>
+        </div>
+      </div>
+  </div>
+  <h3 class="mt-3">List of Freedom Fighters</h3>
+  <ul class="row list-group">
+    <li class="list-group-item" *ngFor="let item of freedomFighters">
+      {{item}}
+    </li>
+  </ul>
+</div>
